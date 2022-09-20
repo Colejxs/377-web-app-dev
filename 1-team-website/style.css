@@ -1,0 +1,159 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+/* .size-tweet
+{
+    width: 550%!important;
+    height: 100%!important;
+    padding-left: 30%;
+} */
+
+#header 
+{
+    background-image:url(footballBack.jpeg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+.navbar-nav li a
+{
+    float: right;
+    color: #fff!important;
+
+}
+
+.navbarHeader
+{
+    color: #fff!important;
+    font-weight: bolder;
+    
+}
+
+.navbar-toggler
+{
+    border: none!important;
+    outline: none!important;
+}
+/*---------------------Welcome----------------------*/
+.welcome
+{
+    padding: 50px 100px;
+    margin-top: -140px;
+    background-color: #fff;
+    box-shadow: 0 0  20px 7px rgb(0, 0, 0.2);
+}
+.welcome h1
+{
+    color: #333;
+}
+.welcome .home-btn
+{
+    margin-top: 10px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: #013f7e;
+}
+
+.welcome .btn:focus
+{
+    box-shadow: none;
+}
+
+.wlcomeImage
+{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 100%;
+}
+
+
+/*----------------------------About us--------------------------------------*/
+
+#about
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.ImageAboutUs
+{
+    border-radius: 60%;
+}
+
+#about .col-md-6
+{
+    padding: 20px 10px ;
+}
+
+#about h3
+{
+    margin: 20px auto;
+}
+
+.embedVid
+{
+    margin-top: 20%;
+    margin-left: 10%;
+}
+
+.socialsLinks
+{
+    text-align: center;
+    padding-left: 20%;
+    
+}
+
+/*---------------------------------Footer----------------------------------------*/
+#footer
+{
+    margin-top: 80px;
+    padding: 100px;
+    background-color: #efefef;
+    color: #013f7e;
+}
+
+
+/*-----------------------------------TICKETS PAGE----------------------------------------------*/
+
+
+#tickets
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.ticketImage
+{
+    font-weight: bolder;
+    font-size: 350%;
+    padding-top: 10%;
+
+}
+
+.ticketTxt
+{
+    font-weight: 500;
+    font-size: larger;
+    padding-top: 3%;
+}
+
+/*-----------------------------------Roster----------------------------------------------*/
+
+#roster
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.rostertTxt
+{
+    font-weight: 500;
+    font-size: larger;
+    padding-top: 3%;
+    padding-bottom: 10%;
+}
+
