@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Your Page Title</title>
+
+
+        <script>
+            function helloWorld() {
+                var name = document.getElementById("name").value;
+                var hobby = document.getElementById("hobby").value;
+
+                var response = "Hello " + name + " I like " + hobby + " too!";
+                
+                // Annoying to habe lost of alerts 
+                //alert(response);
+
+                //Better way is to update the DOM 
+                document.getElementById("greeting").innerHTML = response;
+            }
+        </script>
+
+    </head>
+
+    <body>
+        Hello everybody! My name is Cole S and this is Web App Dev!
+
+        <ul>
+            <li>AP World</li>
+            <li>AP Physics</li>
+            <li>Web Dev</li>
+
+        </ul>
+
+        <hr>
+
+        <h1>
+            my first form
+        </h1>
+
+        <form>
+            Your name:<br>
+            <input type="text" placeholder="Enter your name" size="50" id="name">
+            <br><br>
+            What do you like to do in your spare time?<br>
+            <input type="text" placeholder="Enter hobby" size="50" id="hobby">
+            <br><br>
+
+            <input type="button" value="Click Me" onclick="helloWorld()">
+        </form>
+
+        <h2 id="greeting"></h2>
+    </body>
+</html>
