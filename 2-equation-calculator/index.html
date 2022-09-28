@@ -6,6 +6,7 @@
     <title>Bootstrap demo</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
   </head>
   <body>
     
@@ -44,6 +45,27 @@
               </div>
             </div>
           </nav>
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="getty_470493341_20001333200092800_398689.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="nerd-bigstock_Extreme_Computer_Nerd_1520708.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Putnam.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </section>
     
 
@@ -56,6 +78,63 @@
                 <p>The only calculator you will ever need to be a nerd:/</p>
             </div>
         </div>
+
+        <!-- this will have the z-index image -->
+        <img class="welcome-Image" src="Math--1-.png">
+        
+
+        <a href="#" id = "web-logo-text">
+          <i class="bi bi-play-circle-fill"></i>
+            <p class="text-link">
+              Learn The Basics
+            </p>
+        </a>
+
+        
+      </section>
+
+      <!---------------------------------------Physs---------------------------------------------->
+
+
+      <section id="physs">
+        <div class="container">
+          <div class="center-text">
+
+            <h1>Physss</h1>
+            <p class="Physs-p" >Calculates basic functions u need bc ur DUMB</p>
+            
+            <h2>
+              Density
+            </h2>
+
+            <p>
+              Use the input fields below to convert temperatures between Celsius and Fahrenheit.
+            </p>
+
+            
+            <div class="container inputs">
+              <input type="text" id="celsius" placeholder="Enter a mass (m)"/>
+            
+            </div>
+
+            <div class="container inputs">
+              <input type="text" id="fahrenheit" placeholder="Enter a volume (V)"/>
+            </div>
+
+          
+            <button type="button" onclick="">Calculate Density</button>
+
+            <p id="densityResults">
+
+            </p>
+            
+
+
+          </div>
+        </div>
+
+
+
       </section>
 
 
