@@ -14,6 +14,7 @@
 {
     color: rgb(0, 0, 0)!important;
     font-weight: bolder;
+    font-size: 4vh!important;
     
 }
 
@@ -26,6 +27,10 @@
 #header .carousel-item 
 {
     height: 90vh;
+}
+
+.centerCalc{
+    margin-top: -5px;
 }
 
 
@@ -124,3 +129,160 @@
     
 }
 
+.home-btn
+{
+    margin-top: 10px!important;
+    padding: 10px 30px!important;
+    border-radius: 30px!important;
+    color: #fff!important;
+    background-color: #013f7e!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+
+.btn-center
+{
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+
+.centerMeme
+{
+    padding-left: 30%;
+}
+
+/*-------------------------------------------Algebraaaahhh--------------------------------------------*/ 
+#algebrahhh h1
+{
+    text-align: center;
+    padding-top: 6%;
+    font-size: 10vh;
+    font-weight: 800;
+    
+}
+
+.algebrahhh-p
+{
+    text-align: center;
+    font-size: 3vh!important;
+    font-weight: 300;
+}
+
+#algebrahhh h2
+{
+    text-align: center;
+    padding-top: 3%;
+    font-size: 7vh;
+    font-weight: 600;
+    
+}
+
+#phalgebrahhh p
+{
+    text-align: center;
+    font-size: 2vh;
+    font-weight: 300;
+    padding-bottom: 2%;
+}
+
+/*-------------------------------------------Pre-Calc--------------------------------------------*/ 
+#Pre-Calc h1
+{
+    text-align: center;
+    padding-top: 6%;
+    font-size: 10vh;
+    font-weight: 800;
+    
+}
+
+.Pre-Calc-p
+{
+    text-align: center;
+    font-size: 3vh!important;
+    font-weight: 300;
+}
+
+#Pre-Calc h2
+{
+    text-align: center;
+    padding-top: 3%;
+    font-size: 7vh;
+    font-weight: 600;
+    
+}
+
+#Pre-Calc p
+{
+    text-align: center;
+    font-size: 2vh;
+    font-weight: 300;
+    padding-bottom: 2%;
+}
+
+/*-------------------------------------------GeeeImATree--------------------------------------------*/ 
+#GeeeImATree h1
+{
+    text-align: center;
+    padding-top: 6%;
+    font-size: 10vh;
+    font-weight: 800;
+    
+}
+
+.GeeeImATree-p
+{
+    text-align: center;
+    font-size: 3vh!important;
+    font-weight: 300;
+}
+
+#GeeeImATree h2
+{
+    text-align: center;
+    padding-top: 3%;
+    font-size: 7vh;
+    font-weight: 600;
+    
+}
+
+#GeeeImATree p
+{
+    text-align: center;
+    font-size: 2vh;
+    font-weight: 300;
+    padding-bottom: 2%;
+}
+
+/*-------------------------------------------Calc--------------------------------------------*/ 
+#Calc h1
+{
+    text-align: center;
+    padding-top: 6%;
+    font-size: 10vh;
+    font-weight: 800;
+    
+}
+
+.Calc-p
+{
+    text-align: center;
+    font-size: 3vh!important;
+    font-weight: 300;
+}
+
+#Calc h2
+{
+    text-align: center;
+    padding-top: 3%;
+    font-size: 7vh;
+    font-weight: 600;
+    
+}
+
+#Calc p
+{
+    text-align: center;
+    font-size: 2vh;
+    font-weight: 300;
+    padding-bottom: 2%;
+}
