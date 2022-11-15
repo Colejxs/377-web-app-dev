@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SVG Crap</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+
+
+            /*
+            * Prepares the game with an initial dice roll.
+            */
+            $(document).ready(function () {
+                rollDice();
+            });
+
+            //Global variable to keep track of the number
+            var crapsTracker = 0;
+
+            // boolean to see if frist run 
+            var firstRun = true;
+
+            // Global win condition 
+            var win; 
+
+
+            /*
+            * Rolls both dice at the same time.
+            */
+            function rollDice() {
+                var roll1 = rollDie("D1");
+                var roll2 = rollDie("D2");
+                var total = roll1 + roll2;
+                $("#solution").html("Total: " + total);
+                firstRun = false;
+
+                // will place the beginnin roll in or will check what the previus roll against the roll
+                if(crapsTracker == 0) {
+                    crapsTracker = total;
+                } 
+                
+                if (crapsTracker == 7 || crapsTracker == 11 && firstRun == true) {
+                    win = true;
+                    firstRun = false;
+                } else if (crapsTracker == 2 || crapsTracker == 3 || crapsTracker == 12) {
+                    win = false;
+                } else if (crapsTracker == 7 && firstRun == false) {
+                    win = false;
+                } else if (crapsTracker == roll) {
+                    win = true;
+                }
+
+                if(win != null) {
+                    if(win == true){
+                        $("#winner").html("Congratulations You won");
+                    } else {
+                        $("#winner").html("U suck :/");
+                    }
+                }
+            }
+
+            /*
+            * Rolls the given die which updates the pips and returns the number rolled.
+            *
+            * dieNum - the ID of the die to roll
+            */
+            function rollDie(D) {
+                // Step 1: hide every pip
+                $("#" + D + " ~ .pip").css("visibility", "hidden");
+
+                // Step 2: generate a random number between 1 and 6 (inclusive)
+
+                var roll = Math.ceil(Math.random() * 6);
+
+                
+                console.log(D + ": " + roll);
+
+                // Step 3: show the appropriate pips based on the roll
+                if (roll == 1) {
+                    $("#" + D + "XY2").css("visibility", "visible");
+                } else if (roll == 2) {
+                    $("#" + D + "X1").css("visibility", "visible");
+                    $("#" + D + "Y3").css("visibility", "visible");
+                } else if (roll == 3) {
+                    $("#" + D + "X1").css("visibility", "visible");
+                    $("#" + D + "XY2").css("visibility", "visible");
+                    $("#" + D + "Y3").css("visibility", "visible");
+                } else if (roll == 4) {
+                    $("#" + D + "X1").css("visibility", "visible");
+                    $("#" + D + "X3").css("visibility", "visible");
+                    $("#" + D + "Y1").css("visibility", "visible");
+                    $("#" + D + "Y3").css("visibility", "visible");
+                } else if (roll == 5) {
+                    $("#" + D + "X1").css("visibility", "visible");
+                    $("#" + D + "X3").css("visibility", "visible");
+                    $("#" + D + "XY2").css("visibility", "visible");
+                    $("#" + D + "Y1").css("visibility", "visible");
+                    $("#" + D + "Y3").css("visibility", "visible");
+                } else  { // roll == 6
+                    $("#" + D + "X1").css("visibility", "visible");
+                    $("#" + D + "X2").css("visibility", "visible");
+                    $("#" + D + "X3").css("visibility", "visible");
+                    $("#" + D + "Y1").css("visibility", "visible");
+                    $("#" + D + "Y2").css("visibility", "visible");
+                    $("#" + D + "Y3").css("visibility", "visible");
+                }
+
+                return roll;
+            }
+        </script>
+
+
+    </head>
+
+    <body>
+
+
+        <h1 class="center-txt">SVG Crap</h1>
+
+        <div class="frame-center" >
+            <svg width="500" height="500" style="border: solid 5px black; background-color: rgb(26, 101, 29);" onclick="rollDice()">
+                <g id="die1">
+                    <!-- This is a simple rectangle with a default fill of black -->
+                    <rect id="D1" class="die" x="80" y="190" width="120" height="120" transform="" fill="white" stroke="black" />
+
+                    <!--------------------------Dots------------------------------------->
+                    
+                    <!-------First columb-->
+                    <circle id ="D1X1" class="pip" cx="110" cy="220" r="10" />
+                    <circle id ="D1X2" class="pip" cx="110" cy="250" r="10" />
+                    <circle id ="D1X3" class="pip" cx="110" cy="280" r="10" />
+
+                    <!-------second columb-->
+                    
+                    <circle id ="D1XY2" class="pip" cx="140" cy="250" r="10" />
+                    
+                    
+                    <!-------Third columb-->
+                    <circle id ="D1Y1" class="pip" cx="170" cy="220" r="10" />
+                    <circle id ="D1Y2" class="pip" cx="170" cy="250" r="10" />
+                    <circle id ="D1Y3" class="pip" cx="170" cy="280" r="10" />
+
+
+                </g>
+
+                <g id="die2">
+                    <!-- This is a simple rectangle with a default fill of black -->
+                    <rect id="D2" class="die" x="300" y="190" width="120" height="120" transform="" fill="white" stroke="black" />
+
+                    <!--------------------------Dots------------------------------------->
+
+                    <!-------First columb-->
+                    <circle id ="D2X1" class="pip" cx="330" cy="220" r="10" />
+                    <circle id ="D2X2" class="pip" cx="330" cy="250" r="10" />
+                    <circle id ="D2X3" class="pip" cx="330" cy="280" r="10" />
+
+                    <!-------second columb-->
+                    
+                    <circle id ="D2XY2" class="pip" cx="360" cy="250" r="10" />
+                    
+                    
+                    <!-------Third columb-->
+                    <circle id ="D2Y1" class="pip" cx="390" cy="220" r="10" />
+                    <circle id ="D2Y2" class="pip" cx="390" cy="250" r="10" />
+                    <circle id ="D2Y3" class="pip" cx="390" cy="280" r="10" />
+                </g>
+
+
+
+                
+    
+                
+            </svg>
+
+            
+
+        </div>
+        
+        <h2 class="Center instruction">Click anywhere on the table to roll</h2>
+        <p id="solution"></p>
+        <p id="winner"></p>
+        
+
+    </body>
+</html>

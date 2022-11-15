@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Trex-style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <p class="indexGlitch">
+      <span class="tSpan" aria-hidden="true">No Signal Game</span>
+      <span class="tSpan">No Signal Game</span>
+      <span class="tSpan" aria-hidden="true">No Signal Game</span>
+    </p>
+    <div class="game">
+        <svg class="gameBoard">
+          <rect id="dino" class="" x="50" y="150" width="50" height="50" fill="black"/>
+          <rect id="cactus" class="cactusAnimate" x="580" y="160" width="20" height="40" fill="green"/>
+          <text id="over" class="GameOverGlitch" x="80" y="130">Game Over!</text>
+          <!-- <text id="score" class="GameScoreGlitch" x="540" y="20"></text> -->
+          <text id="score" class="GameScoreGlitch" x="540" y="20"></text>
+
+        </svg>
+    </div>
+    <h1 class="instructions">
+      You are a geometric cube who is dashing through enimy lines. Your goal is to play as long as you can, Hopefully by then your signal will be back. To jump simply press any button, the game will begine with your first move Goodluck:) 
+    </h1>
+    <script src="Trex-scripts.js"></script>
+  </body>
+</html>
