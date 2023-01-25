@@ -1,0 +1,18 @@
+def fib():
+    total = 0
+    num1 = 1
+    num2 = 2
+    numNext = num1 + num2
+    while num2 < 4_000_000:
+        # part 1 
+        if num2 % 2 == 0:
+            total += num2
+
+        num1 = num2
+        num2 = numNext
+        numNext = num1 + num2
+    print(total)
+fib()
+
+            
+
